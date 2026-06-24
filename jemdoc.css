@@ -450,6 +450,9 @@ table.imgtable, table.imgtable td {
     text-align: left;
 }
 
+table.imgtable {
+    position: relative; 
+}
 
 /* Publication */
 p.pub_title {
@@ -464,4 +467,69 @@ p.pub_author{
 
 p.pub_link{
 	font-size: 14px	
+}
+
+/* 按钮的基本样式 */
+.theme-btn {
+position: fixed;
+top: 20px;
+right: 20px;
+padding: 8px 12px;
+cursor: pointer;
+border-radius: 5px;
+border: 1px solid #ccc;
+background-color: #f9f9f9;
+color: #333;
+font-weight: bold;
+z-index: 1000;
+transition: all 0.3s ease;
+}
+
+/* 黑夜模式的全局样式 */
+body.dark-mode {
+background-color: #1a1a1a;
+color: #e0e0e0;
+}
+
+/* 调整黑夜模式下的链接颜色，浅蓝色更清晰 */
+body.dark-mode a {
+color: #66b2ff; 
+}
+
+/* 覆盖你原本写死的 Black 字体颜色 */
+body.dark-mode font[style*="color:Black"] {
+color: #e0e0e0 !important;
+}
+
+/* 如果 container 或表格有白底，也需要将其变暗 */
+body.dark-mode #container, 
+body.dark-mode .container {
+background-color: #1a1a1a;
+}
+
+/* 调整黑夜模式下按钮的样式 */
+body.dark-mode .theme-btn {
+background-color: #333;
+color: #f9f9f9;
+border-color: #555;
+}
+
+.table-wrapper {
+    position: relative;
+    width: 100%;
+}
+/* 修改后的按钮样式 */
+.theme-btn {
+    position: absolute; /* 这里是关键，把 fixed 改成 absolute */
+    top: 15px;          /* 距离表格顶部 15px */
+    right: 15px;        /* 距离表格右侧 15px */
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    color: #333;
+    font-weight: bold;
+    z-index: 1000;
+    transition: all 0.3s ease;
 }
