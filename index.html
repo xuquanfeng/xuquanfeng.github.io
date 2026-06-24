@@ -9,11 +9,11 @@
 
 </head>
 <body>
-
 <a id="home" class="anchor"></a>
 <div id="container"> 
-<div class="container"> 
-
+<div class="container">
+<div class="table-wrapper">
+<button id="theme-toggle" class="theme-btn">🌓 Dark</button>
 <table class="imgtable">
 <tr>
 <td> <a href="./"><img src="./figs/xuquanfeng.jpg" alt="" height="200px" /></a>&nbsp;</td>
@@ -34,6 +34,7 @@ Email: <a href="mailto:xuquanfeng23@mails.ucas.ac.cn">xuquanfeng23@mails.ucas.ac
 </p>
 </td>
 </tr></table>
+</div>
 
 <h2>Biography</h2>
 <p> I am currently a 3rd-year Ph.D. candidate in the Galaxy Cluster Group at the Shanghai Astronomical Observatory, 
@@ -220,5 +221,33 @@ AAAI Conference on Artificial Intelligence (<b>AAAI</b>), 2025.<br>
 
 <div id="footer">
 </div>
+<script>
+  const toggleBtn = document.getElementById('theme-toggle');
+  const body = document.body;
+
+  // 1. 页面加载时，检查本地存储中的主题偏好
+  const currentTheme = localStorage.getItem('theme');
+  if (currentTheme === 'dark') {
+    body.classList.add('dark-mode');
+    toggleBtn.textContent = '☀️ Light';
+  }
+
+  // 2. 按钮点击事件
+  toggleBtn.addEventListener('click', function() {
+    body.classList.toggle('dark-mode');
+    let theme = 'light';
+    
+    // 如果当前是黑夜模式
+    if (body.classList.contains('dark-mode')) {
+      theme = 'dark';
+      toggleBtn.textContent = '☀️ Light';
+    } else {
+      toggleBtn.textContent = '🌓 Dark';
+    }
+    
+    // 3. 保存用户的偏好
+    localStorage.setItem('theme', theme);
+  });
+</script>
 </body>
 </html>
