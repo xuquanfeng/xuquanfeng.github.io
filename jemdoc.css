@@ -543,3 +543,9 @@ border-color: #555;
   a { color: #000 !important; text-decoration: none !important; }
   body { font-size: 10pt; line-height: 1.35; }
 }
+
+@media print {
+  .container { width: auto; margin: 0; box-shadow: none; }
+}
+.print-only { display: none; }
+@media print { video { display: none !important; } .print-only { display: inline-block; } }
