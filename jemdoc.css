@@ -533,3 +533,13 @@ border-color: #555;
     z-index: 1000;
     transition: all 0.3s ease;
 }
+
+@media print {
+  @page { size: A4; margin: 12mm 14mm; }
+  #theme-toggle, .theme-btn { display: none !important; }
+  .proj_thumb { width: 78px; height: auto; }   /* 或 display:none 更省纸 */
+  table.imgtable tr { break-inside: avoid; page-break-inside: avoid; }
+  h2 { break-after: avoid; page-break-after: avoid; }
+  a { color: #000 !important; text-decoration: none !important; }
+  body { font-size: 10pt; line-height: 1.35; }
+}
