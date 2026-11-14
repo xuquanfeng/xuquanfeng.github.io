@@ -15,6 +15,22 @@
     width: 100%;
     height: auto;
   }
+  .pub-badge {
+    display: inline-block;
+    padding: 1px 6px;
+    border-radius: 3px;
+    font-size: 0.8em;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1.4;
+    color: #ffffff;
+    vertical-align: 1px;
+  }
+  .pub-badge-journal { background-color: #2a6ebb; }
+  .pub-badge-conf { background-color: #3fbfbf; }
+  body.dark-mode .pub-badge-journal { background-color: #3f8ad9; }
+  body.dark-mode .pub-badge-conf { background-color: #6ca2e0; }
+
   @media print {
     .visitor-map { display: none; }
   }
@@ -79,8 +95,8 @@ Email: <a href="mailto:xuquanfeng23@mails.ucas.ac.cn">xuquanfeng23@mails.ucas.ac
 <td>
 <p class="pub_title">Plate-YOLO: An End-to-End Object Detection Framework for Robust Astrometric Registration of Historical Plates</p>
 <p class="pub_author"><b>Quanfeng Xu</b>, Zhengjun Shang, Shiyin Shen*, Yong Yu*, Mingyang Ma, Zhenghong Tang, et al.<br>
-<i>The Astronomical Journal</i> (<b>AJ</b>), 2026.<br>
-[<a href="https://arxiv.org/abs/2610.25677" target="_blank">Paper</a>]
+<span class="pub-badge pub-badge-journal">Journal Article</span><i>The Astronomical Journal</i> (<b>AJ</b>), 2026.<br>
+[<a href="https://doi.org/10.3847/1538-3881/aebbbe" target="_blank">Paper</a>]
 [<a href="https://xuquanfeng.github.io/Plate-YOLO/" target="_blank">Project</a>]
 [<a href= "https://github.com/xuquanfeng/Plate_YOLO" target="_blank">Code</a>]
 </p> </td>
@@ -91,7 +107,7 @@ Email: <a href="mailto:xuquanfeng23@mails.ucas.ac.cn">xuquanfeng23@mails.ucas.ac
 <td>
 <p class="pub_title">FluxFlow: Conservative Flow-Matching for Astronomical Image Super-Resolution</p>
 <p class="pub_author">Shuhong Liu^, Xining Ge^, <b>Quanfeng Xu^</b>, Ziteng Cui, Liuzhuozheng Li, Gengjia Chang, Jun Liu, et al.<br>
-<i>Neural Information Processing Systems </i>(<b>NeurIPS</b>), 2026.<br>
+<span class="pub-badge pub-badge-conf">Conference Paper &middot; Poster</span><i>Neural Information Processing Systems </i>(<b>NeurIPS</b>), 2026.<br>
 [<a href="http://arxiv.org/abs/2605.03749" target="_blank">Paper</a>]
 [<a href="https://i2wm.github.io/fluxflow/" target="_blank">Project</a>]
 [<a href="https://github.com/I2WM/FluxFlow" target="_blank">Code</a>]
@@ -103,7 +119,7 @@ Email: <a href="mailto:xuquanfeng23@mails.ucas.ac.cn">xuquanfeng23@mails.ucas.ac
 <td>
 <p class="pub_title">Enhancing astrometric registration of Chinese historical Astronomical Digital Plates with deep learning</p>
 <p class="pub_author"><b>Quanfeng Xu</b>, Zhengjun Shang, Shiyin Shen*, Yong Yu*, Meiting Yang*, Hao Luo, et al.<br>
-<i>Research in Astronomy and Astrophysics</i> (<b>RAA</b>), 2026.
+<span class="pub-badge pub-badge-journal">Journal Article</span><i>Research in Astronomy and Astrophysics</i> (<b>RAA</b>), 2026.
 <span style="background-color: #d9534f; color: #ffffff; padding: 1px 5px; border-radius: 3px; font-size: 0.85em; font-weight: bold; margin: 0 5px 0 0;">Cover Article</span> <span style="color: #d9534f; font-weight: bold; font-size: 0.9em;">Vol. 26 No. 9 </span>.<br>
 [<a href="https://doi.org/10.1088/1674-4527/ae5f6a" target="_blank">Paper</a>]
 [<a href="https://xuquanfeng.github.io/AI_Plate/" target="_blank">Project</a>]
@@ -117,8 +133,9 @@ Email: <a href="mailto:xuquanfeng23@mails.ucas.ac.cn">xuquanfeng23@mails.ucas.ac
 <td>
 <p class="pub_title">From Non-parametric Statistics to Images: Generating Galaxy Morphologies</p>
 <p class="pub_author"><b>Quanfeng Xu</b>, Mi Chen, Renhao Ye, Siyuan Chen, Nan Li, Shiyin Shen*<br>
-<i>Universe</i>, 2026.<br>
+<span class="pub-badge pub-badge-journal">Journal Article</span><i>Universe</i>, 2026.<br>
 [<a href="https://arxiv.org/abs/2610.25677" target="_blank">Paper</a>]
+[<a href= "https://github.com/xuquanfeng/Galaxy_Flow_VAE" target="_blank">Code</a>]
 </p> </td>
 </tr>
 
@@ -127,7 +144,7 @@ Email: <a href="mailto:xuquanfeng23@mails.ucas.ac.cn">xuquanfeng23@mails.ucas.ac
 <td>
 <p class="pub_title">From images to features: unbiased morphology classification via variational auto-encoders and domain adaptation </p>
 <p class="pub_author"><b>Quanfeng Xu</b>, Shiyin Shen*, Rafael S. de Souza*, Mi Chen, Renhao Ye, Yumei She, Zhu Chen, et al.<br>
-    <i>Monthly Notices of the Royal Astronomical Society </i>(<b>MNRAS</b>), 2023.<br>
+<span class="pub-badge pub-badge-journal">Journal Article</span><i>Monthly Notices of the Royal Astronomical Society </i>(<b>MNRAS</b>), 2023.<br>
 [<a href= "https://doi.org/10.1093/mnras/stad3181" target="_blank">Paper</a>] 
 [<a href= "https://github.com/xuquanfeng/Galaxy_VAE" target="_blank">Code</a>] 
 </p> </td>
@@ -138,7 +155,7 @@ Email: <a href="mailto:xuquanfeng23@mails.ucas.ac.cn">xuquanfeng23@mails.ucas.ac
 <td>
 <p class="pub_title">Denoising the Deep Sky: Physics-Based CCD Noise Formation for Astronomical Imaging</p>
 <p class="pub_author">Shuhong Liu, Xining Ge, Ziying Gu, <b>Quanfeng Xu</b>, Lin Gu, Ziteng Cui, Xuangeng Chu, Jun Liu, Dong Li, Tatsuya Harada<br>
-<i>European Conference on Computer Vision </i>(<b>ECCV</b>), 2026.<br>
+<span class="pub-badge pub-badge-conf">Conference Paper &middot; Poster</span><i>European Conference on Computer Vision </i>(<b>ECCV</b>), 2026.<br>
 [<a href="http://doi.org/10.1007/978-3-032-37324-3_30" target="_blank">Paper</a>]
 [<a href= "https://github.com/ShuhongLL/Denoising-Deep-Sky" target="_blank">Code</a>]
 </p> </td>
@@ -149,7 +166,7 @@ Email: <a href="mailto:xuquanfeng23@mails.ucas.ac.cn">xuquanfeng23@mails.ucas.ac
 <td>
 <p class="pub_title">DeRainGS: Gaussian Splatting for Enhanced Scene Reconstruction in Rainy Environments</p>
 <p class="pub_author">Shuhong Liu, Xiang Chen, Hongming Chen, <b>Quanfeng Xu</b>, Mingrui Li*<br>
-<i>AAAI Conference on Artificial Intelligence</i> (<b>AAAI</b>), 2025.<br>
+<span class="pub-badge pub-badge-conf">Conference Paper &middot; Poster</span><i>AAAI Conference on Artificial Intelligence</i> (<b>AAAI</b>), 2025.<br>
 [<a href="https://doi.org/10.1609/aaai.v39i5.32592" target="_blank">Paper</a>]
 [<a href="https://deraings.github.io/" target="_blank">Project</a>]
 [<a href="https://github.com/ShuhongLL/DeRainGS" target="_blank">Code</a>]
@@ -172,7 +189,7 @@ Email: <a href="mailto:xuquanfeng23@mails.ucas.ac.cn">xuquanfeng23@mails.ucas.ac
 <td>
 <p class="pub_title">qrpca: A package for fast principal component analysis with GPU acceleration </p>
 <p class="pub_author"> Rafael S. de Souza*, <b>Quanfeng Xu</b>, Shiyin Shen, Chen Peng, Zihao Mu<br>
-    <i>Astronomy and Computing </i>(<b>A&C</b>), 2022.<br>
+<span class="pub-badge pub-badge-journal">Journal Article</span><i>Astronomy and Computing </i>(<b>A&C</b>), 2022.<br>
 [<a href= "https://doi.org/10.1016/j.ascom.2022.100633" target="_blank">Paper</a>] 
 [<a href= "https://github.com/xuquanfeng/qrpca" target="_blank">Code</a>] 
 </p> </td>
