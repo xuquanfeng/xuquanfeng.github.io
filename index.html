@@ -17,19 +17,22 @@
   }
   .pub-badge {
     display: inline-block;
-    padding: 1px 6px;
+    padding: 0 5px;
+    border: 1px solid transparent;
     border-radius: 3px;
     font-size: 0.8em;
     font-style: normal;
     font-weight: bold;
     line-height: 1.4;
-    color: #ffffff;
     vertical-align: 1px;
+    margin-right: 5px;
   }
-  .pub-badge-journal { background-color: #2a6ebb; }
-  .pub-badge-conf { background-color: #3fbfbf; }
-  body.dark-mode .pub-badge-journal { background-color: #3f8ad9; }
-  body.dark-mode .pub-badge-conf { background-color: #6ca2e0; }
+  /* Journal Article: outlined box, coloured text, no fill */
+  .pub-badge-journal { color: #2a6ebb; border-color: #2a6ebb; background-color: transparent; }
+  body.dark-mode .pub-badge-journal { color: #7fb2f0; border-color: #7fb2f0; }
+  /* Conference Paper: outlined box in the same teal, no fill */
+  .pub-badge-conf { color: #3fbfbf; border-color: #3fbfbf; background-color: transparent; }
+  body.dark-mode .pub-badge-conf { color: #8fe6e6; border-color: #8fe6e6; }
 
   @media print {
     .visitor-map { display: none; }
@@ -62,6 +65,7 @@ Email: <a href="mailto:xuquanfeng23@mails.ucas.ac.cn">xuquanfeng23@mails.ucas.ac
 [<a class="p2" href="https://orcid.org/0000-0002-9572-6212" target="_blank">Orcid</a>]
 [<a href="https://openreview.net/profile?id=%7EQuanfeng_Xu1" target="_blank">OpenReview</a>]
 [<a class="p1" href="https://scholar.google.com/citations?hl=en&user=d8b75N8AAAAJ" target="_blank">Google Scholar</a>]
+[<a href="publications.html">Publications</a>]
 </p>
 </td>
 </tr></table>
@@ -86,9 +90,23 @@ Email: <a href="mailto:xuquanfeng23@mails.ucas.ac.cn">xuquanfeng23@mails.ucas.ac
 <h2>Selected Publications
     <font style="color:Black" size="2"><a href="https://orcid.org/0000-0002-9572-6212">[Full paper]</a></font>
     <font size="2">(^Co-first author; *Corresponding author)</font>
+    <font size="2"><a href="publications.html">[All publications by topic &rarr;]</a></font>
 </h2>
 
 <table class="imgtable">
+
+<tr>
+<td><img class="proj_thumb" src="./figs/2026_Nips_FluxFlow.jpg" alt="" height="90px" width="180px" />&nbsp;</td>
+<td>
+<p class="pub_title">FluxFlow: Conservative Flow-Matching for Astronomical Image Super-Resolution</p>
+<p class="pub_author">Shuhong Liu^, Xining Ge^, <b>Quanfeng Xu^</b>, Ziteng Cui, Liuzhuozheng Li, Gengjia Chang, Jun Liu, et al.<br>
+<span class="pub-badge pub-badge-conf">Conference Paper &middot; Poster</span><i>Neural Information Processing Systems </i>(<b>NeurIPS</b>), 2026.<br>
+[Paper]
+[<a href="https://arxiv.org/abs/2605.03749" target="_blank">arXiv</a>]
+[<a href="https://i2wm.github.io/fluxflow/" target="_blank">Project</a>]
+[<a href="https://github.com/I2WM/FluxFlow" target="_blank">Code</a>]
+</p> </td>
+</tr>
 
 <tr>
 <td><img class="proj_thumb" src="./figs/AJ_Plates_2026.png" alt="" height="90px" width="180px" />&nbsp;</td>
@@ -97,20 +115,9 @@ Email: <a href="mailto:xuquanfeng23@mails.ucas.ac.cn">xuquanfeng23@mails.ucas.ac
 <p class="pub_author"><b>Quanfeng Xu</b>, Zhengjun Shang, Shiyin Shen*, Yong Yu*, Mingyang Ma, Zhenghong Tang, et al.<br>
 <span class="pub-badge pub-badge-journal">Journal Article</span><i>The Astronomical Journal</i> (<b>AJ</b>), 2026.<br>
 [<a href="https://doi.org/10.3847/1538-3881/aebbbe" target="_blank">Paper</a>]
+[<a href="https://arxiv.org/abs/2610.25677" target="_blank">arXiv</a>]
 [<a href="https://xuquanfeng.github.io/Plate-YOLO/" target="_blank">Project</a>]
-[<a href= "https://github.com/xuquanfeng/Plate_YOLO" target="_blank">Code</a>]
-</p> </td>
-</tr>
-
-<tr>
-<td><img class="proj_thumb" src="./figs/2026_Nips_FluxFlow.jpg" alt="" height="90px" width="180px" />&nbsp;</td>
-<td>
-<p class="pub_title">FluxFlow: Conservative Flow-Matching for Astronomical Image Super-Resolution</p>
-<p class="pub_author">Shuhong Liu^, Xining Ge^, <b>Quanfeng Xu^</b>, Ziteng Cui, Liuzhuozheng Li, Gengjia Chang, Jun Liu, et al.<br>
-<span class="pub-badge pub-badge-conf">Conference Paper &middot; Poster</span><i>Neural Information Processing Systems </i>(<b>NeurIPS</b>), 2026.<br>
-[<a href="http://arxiv.org/abs/2605.03749" target="_blank">Paper</a>]
-[<a href="https://i2wm.github.io/fluxflow/" target="_blank">Project</a>]
-[<a href="https://github.com/I2WM/FluxFlow" target="_blank">Code</a>]
+[<a href="https://github.com/xuquanfeng/Plate_YOLO" target="_blank">Code</a>]
 </p> </td>
 </tr>
 
@@ -122,9 +129,10 @@ Email: <a href="mailto:xuquanfeng23@mails.ucas.ac.cn">xuquanfeng23@mails.ucas.ac
 <span class="pub-badge pub-badge-journal">Journal Article</span><i>Research in Astronomy and Astrophysics</i> (<b>RAA</b>), 2026.
 <span style="background-color: #d9534f; color: #ffffff; padding: 1px 5px; border-radius: 3px; font-size: 0.85em; font-weight: bold; margin: 0 5px 0 0;">Cover Article</span> <span style="color: #d9534f; font-weight: bold; font-size: 0.9em;">Vol. 26 No. 9 </span>.<br>
 [<a href="https://doi.org/10.1088/1674-4527/ae5f6a" target="_blank">Paper</a>]
+[<a href="https://arxiv.org/abs/2604.04714" target="_blank">arXiv</a>]
 [<a href="https://xuquanfeng.github.io/AI_Plate/" target="_blank">Project</a>]
-[<a href= "https://github.com/xuquanfeng/Classification_Plate" target="_blank">Code</a>]
-[<a href= "https://mp.weixin.qq.com/s/RQTmfDMoxmHiUNL55r5iyg?scene=1" target="_blank">Report</a>]
+[<a href="https://github.com/xuquanfeng/Classification_Plate" target="_blank">Code</a>]
+[<a href="https://mp.weixin.qq.com/s/RQTmfDMoxmHiUNL55r5iyg?scene=1" target="_blank">Report</a>]
 </p> </td>
 </tr>
 
@@ -134,8 +142,9 @@ Email: <a href="mailto:xuquanfeng23@mails.ucas.ac.cn">xuquanfeng23@mails.ucas.ac
 <p class="pub_title">From Non-parametric Statistics to Images: Generating Galaxy Morphologies</p>
 <p class="pub_author"><b>Quanfeng Xu</b>, Mi Chen, Renhao Ye, Siyuan Chen, Nan Li, Shiyin Shen*<br>
 <span class="pub-badge pub-badge-journal">Journal Article</span><i>Universe</i>, 2026.<br>
-[<a href="https://arxiv.org/abs/2610.25677" target="_blank">Paper</a>]
-[<a href= "https://github.com/xuquanfeng/Galaxy_Flow_VAE" target="_blank">Code</a>]
+[Paper]
+[<a href="https://arxiv.org/abs/2611.19211" target="_blank">arXiv</a>]
+[<a href="https://github.com/xuquanfeng/Galaxy_Flow_VAE" target="_blank">Code</a>]
 </p> </td>
 </tr>
 
@@ -145,8 +154,9 @@ Email: <a href="mailto:xuquanfeng23@mails.ucas.ac.cn">xuquanfeng23@mails.ucas.ac
 <p class="pub_title">From images to features: unbiased morphology classification via variational auto-encoders and domain adaptation </p>
 <p class="pub_author"><b>Quanfeng Xu</b>, Shiyin Shen*, Rafael S. de Souza*, Mi Chen, Renhao Ye, Yumei She, Zhu Chen, et al.<br>
 <span class="pub-badge pub-badge-journal">Journal Article</span><i>Monthly Notices of the Royal Astronomical Society </i>(<b>MNRAS</b>), 2023.<br>
-[<a href= "https://doi.org/10.1093/mnras/stad3181" target="_blank">Paper</a>] 
-[<a href= "https://github.com/xuquanfeng/Galaxy_VAE" target="_blank">Code</a>] 
+[<a href="https://doi.org/10.1093/mnras/stad3181" target="_blank">Paper</a>]
+[<a href="https://arxiv.org/abs/2303.08627" target="_blank">arXiv</a>]
+[<a href="https://github.com/xuquanfeng/Galaxy_VAE" target="_blank">Code</a>] 
 </p> </td>
 </tr>
 
@@ -156,8 +166,9 @@ Email: <a href="mailto:xuquanfeng23@mails.ucas.ac.cn">xuquanfeng23@mails.ucas.ac
 <p class="pub_title">Denoising the Deep Sky: Physics-Based CCD Noise Formation for Astronomical Imaging</p>
 <p class="pub_author">Shuhong Liu, Xining Ge, Ziying Gu, <b>Quanfeng Xu</b>, Lin Gu, Ziteng Cui, Xuangeng Chu, Jun Liu, Dong Li, Tatsuya Harada<br>
 <span class="pub-badge pub-badge-conf">Conference Paper &middot; Poster</span><i>European Conference on Computer Vision </i>(<b>ECCV</b>), 2026.<br>
-[<a href="http://doi.org/10.1007/978-3-032-37324-3_30" target="_blank">Paper</a>]
-[<a href= "https://github.com/ShuhongLL/Denoising-Deep-Sky" target="_blank">Code</a>]
+[<a href="https://doi.org/10.1007/978-3-032-37324-3_30" target="_blank">Paper</a>]
+[<a href="https://arxiv.org/abs/2601.23276" target="_blank">arXiv</a>]
+[<a href="https://github.com/ShuhongLL/Denoising-Deep-Sky" target="_blank">Code</a>]
 </p> </td>
 </tr>
 
@@ -168,30 +179,9 @@ Email: <a href="mailto:xuquanfeng23@mails.ucas.ac.cn">xuquanfeng23@mails.ucas.ac
 <p class="pub_author">Shuhong Liu, Xiang Chen, Hongming Chen, <b>Quanfeng Xu</b>, Mingrui Li*<br>
 <span class="pub-badge pub-badge-conf">Conference Paper &middot; Poster</span><i>AAAI Conference on Artificial Intelligence</i> (<b>AAAI</b>), 2025.<br>
 [<a href="https://doi.org/10.1609/aaai.v39i5.32592" target="_blank">Paper</a>]
+[<a href="https://arxiv.org/abs/2408.11540" target="_blank">arXiv</a>]
 [<a href="https://deraings.github.io/" target="_blank">Project</a>]
 [<a href="https://github.com/ShuhongLL/DeRainGS" target="_blank">Code</a>]
-</p> </td>
-</tr>
-
-<!-- <tr>
-<td><img class="proj_thumb" src="./figs/GalMoss.png" alt="" height="90px" width="180px"/>&nbsp;</td>
-<td>
-    <p class="pub_title">Galmoss: A package for GPU-accelerated galaxy profile fitting </p>
-    <p class="pub_author"> Mi Chen, Rafael S. de Souza*, <b>Quanfeng Xu</b>, Shiyin Shen*, Ana L. Chies-Santos, Renhao Ye, et al.<br>
-    <i>Astronomy and Computing </i>(<b>A&C</b>), 2024.<br> 
-[<a href= "https://doi.org/10.1016/j.ascom.2024.100825" target="_blank">Paper</a>] 
-[<a href= "https://github.com/Chenmi0619/GALMoss" target="_blank">Code</a>] 
-</p> </td>
-</tr> -->
-
-<tr>
-<td><img class="proj_thumb" src="./figs/QRPCA_2022.png" alt="" height="90px" width="180px"/>&nbsp;</td>
-<td>
-<p class="pub_title">qrpca: A package for fast principal component analysis with GPU acceleration </p>
-<p class="pub_author"> Rafael S. de Souza*, <b>Quanfeng Xu</b>, Shiyin Shen, Chen Peng, Zihao Mu<br>
-<span class="pub-badge pub-badge-journal">Journal Article</span><i>Astronomy and Computing </i>(<b>A&C</b>), 2022.<br>
-[<a href= "https://doi.org/10.1016/j.ascom.2022.100633" target="_blank">Paper</a>] 
-[<a href= "https://github.com/xuquanfeng/qrpca" target="_blank">Code</a>] 
 </p> </td>
 </tr>
 
